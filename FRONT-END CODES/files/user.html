@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="theme-stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <title>Fake Hunters</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #cdffd8, #94b9ff);
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h1 {
+            font-size: 60px;
+            margin: 20px;
+            padding-left: 300px;
+            margin-bottom: 40px;
+        }
+
+        .search-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 25px 0;
+        }
+
+        .search-bar {
+            width: 400px;
+            padding: 20px;
+            border: 1px solid black;
+            border-radius: 80px;
+            margin-left:250px; 
+            margin-bottom: 40px;
+        }
+
+        .search-button {
+            background: linear-gradient(90deg, #8c52ff, #5ce1ef);
+            color: black;
+            border: none;
+            border-radius: 5px;
+            padding: 15px 30px;
+            cursor: pointer;
+            font-size: 24px;
+            margin-top: 30px;
+        }
+
+        .search-button:hover {
+            background: linear-gradient(90deg, #5ce1ef, #8c52ff);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>WELCOME TO FAKE HUNTERS</h1>
+        <div class="search-container">
+            <input type="text" class="search-bar" placeholder="Enter the Twitter ID">
+            <button class="search-button" style="margin-left:250px;"><a href="alert.html">REPORT</a></button>
+        </div>
+    </div>
+</body>
+
+</html>

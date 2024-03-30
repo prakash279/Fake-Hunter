@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Twitter Profile Analyzer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .button-container {
+            text-align: center;
+            margin: 20px;
+        }
+        .button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        #review-page, #alert-page {
+            display: none;
+            padding: 20px;
+            text-align: center;
+        }
+        #score-bar {
+            width: 75%;
+            background-color: #4CAF50;
+            height: 30px;
+            border-top-right-radius: 100px;
+            border-bottom-right-radius: 100px;  
+        }
+        #score-bar1 {
+            border-style: solid;
+            margin-left:465px;
+            margin-right:464px;
+        }
+        #tags-container {
+            text-align: left;
+        }
+        .tag {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <button class="button" id="review-button" onclick="showReviewPage()">Review</button>
+        <button class="button" id="alert-button" onclick="showAlertPage()">Alert</button>
+    </div>
+    <div id="review-page">
+        <h1>Twitter Profile Review</h1>
+        <img src="/images/twitter_profile.png" alt="avd"  height="500px" width="700px">
+        <p>Profile Score: 75% Fake</p>
+        <div id="score-bar1"><div id="score-bar"></div></div>
+    </div>
+    <div id="alert-page">
+        <h1>Alert Page</h1>
+        <div id="tags-container">
+            <img src="/images/image (3).png" alt="abs" height="700px" width="1000px">
+            <img src="/images/image (6).png" alt="abs"height="700px" width="1000px">
+            <button class="button" id="Report" onclick="showReviewPage()">Report</button>
+        </div>
+    </div>
+    <script>
+        function showReviewPage() {
+            document.getElementById("review-button").style.backgroundColor = "#4CAF50";
+            document.getElementById("alert-button").style.backgroundColor = "#45a049";
+            document.getElementById("review-page").style.display = "block";
+            document.getElementById("alert-page").style.display = "none";
+        }
+
+        function showAlertPage() {
+            document.getElementById("alert-button").style.backgroundColor = "#4CAF50";
+            document.getElementById("review-button").style.backgroundColor = "#45a049";
+            document.getElementById("alert-page").style.display = "block";
+            document.getElementById("review-page").style.display = "none";
+        }
+    </script>
+</body>
+</html>
